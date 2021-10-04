@@ -19,21 +19,23 @@ public class StreamApiApplication {
 
     public static void main(String[] args) {
         PeekandSkip peekandSkip=new PeekandSkip();
-       // peekandSkip.useOfPeekAndSkip();
+        System.out.println("================>>>  PEEK AND SKIP");
+        peekandSkip.useOfPeekAndSkip();
 
         ReadingFiles readingFiles=new ReadingFiles();
-//        try {
-//            readingFiles.readFilesUsingStream();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        System.out.println("================>>>  READING FILES");
+        try {
+            readingFiles.readFilesUsingStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         CreateStreams createStreams=new CreateStreams();
-        //createStreams.createStreams();
+        createStreams.createStreams();
 
         StreamCollectors streamCollectors=new StreamCollectors();
-     //   streamCollectors.collectors();
-     //   streamCollectors.collectToArray();
+        streamCollectors.collectors();
+        streamCollectors.collectToArray();
 
         StreamOperations streamOperations=new StreamOperations();
         System.out.println("================>>>  COLLECT()");
